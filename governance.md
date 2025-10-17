@@ -38,17 +38,18 @@ Each team is assigned explicit access (see **Access Control Policy**).
 
 **Principle:** *Least Privilege + Separation of Duties*
 
-| Repo | Platform | Infra | Apps | K8s | Monitoring | Docs | Default (All Members) |
-|------|-----------|--------|------|------|-------------|-----------|
-| platform-ci | **Admin** | Read | Read | Read | Read | Read | Read |
-| infra-terraform | Maintain | **Write** | Read | Read | Read | Read | Read |
-| infra-ansible | Maintain | **Write** | Read | Read | Read | Read | Read |
-| apps-python-api | Maintain | Write | **Write** | Read | Read | Read | Read |
-| apps-go-service | Maintain | Write | **Write** | Read | Read | Read | Read |
-| k8s-platform | Maintain | Write | Write | **Maintain** | Read | Read | Read |
-| monitoring-stack | Maintain | Write | Write | Write | **Write** | Read | Read |
-| labs-troubleshooting | Maintain | **Write** | Read | Read | **Write** | Read | Read |
-| docs-handbook | Maintain | Write | Write | Write | Write | **Write** | Read |
+| Repo                | Platform | Infra  | Apps  | K8s   | Monitoring | Docs  | Default (All Members) |
+|---------------------|-----------|--------|-------|-------|-------------|-------|------------------------|
+| platform-ci         | **Admin** | Read   | Read  | Read  | Read        | Read  | Read                   |
+| infra-terraform     | Maintain  | **Write** | Read  | Read  | Read        | Read  | Read                   |
+| infra-ansible       | Maintain  | **Write** | Read  | Read  | Read        | Read  | Read                   |
+| apps-python-api     | Maintain  | Write  | **Write** | Read  | Read        | Read  | Read                   |
+| apps-go-service     | Maintain  | Write  | **Write** | Read  | Read        | Read  | Read                   |
+| k8s-platform        | Maintain  | Write  | Write | **Maintain** | Read  | Read  | Read                   |
+| monitoring-stack    | Maintain  | Write  | Write | Write | **Write**    | Read  | Read                   |
+| labs-troubleshooting| Maintain  | **Write** | Read  | Read  | **Write**   | Read  | Read                   |
+| docs-handbook       | Maintain  | Write  | Write | Write | Write        | **Write** | Read                |
+
 
 **Org-Wide Security Defaults:**
 
